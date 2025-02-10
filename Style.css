@@ -1,0 +1,516 @@
+body{
+    overflow-x: hidden;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    display: grid;
+}
+.top{
+
+    background-color: orangered ;
+}
+
+.head{
+display: grid;
+grid-template-columns: 1fr 2fr;
+}
+.container img{
+width: 150px;
+padding-left:90px;
+padding-top: 50px;
+
+}
+nav ul{
+display: flex;
+justify-content: flex-end;
+
+}
+nav li{
+font-size: 18px;
+list-style: none;
+padding: 20px;
+margin-right: 50px;
+margin-top: 30px;
+font-weight: bolder;
+color: #fff;
+
+}
+nav a{
+color: #fff;
+font-family:'Times New Roman', Times, serif;
+font-weight: bolder;
+text-decoration: none;
+}
+#app{
+border: 1px solid;
+color:#fff;
+border-radius: 10px;
+}
+#sign{
+border: 1px solid;
+color: #fff;
+border-radius: 10px;
+background-color: black;
+border: none;
+
+}
+
+.text{
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.non-veg img{
+position: absolute;
+left:8px;
+margin-top: 0px;
+}
+.veg{
+    display: flex;
+    position: relative;
+    
+    
+}
+.veg img{
+    position: absolute;
+    right:0px;
+    margin-top: 20px;
+}
+
+.main{
+
+position: relative;
+margin-left: 70px;
+font-size: 45px;
+color: #fff;
+text-align: center;
+margin-top: 25px;
+}
+@media (max-width: 768px) {
+    .container-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-1, .box-2 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    input[type="text"], input[type="search"] {
+        width: 100%;
+    }
+}
+
+
+.container-2{
+display: flex;
+justify-content: center;
+}
+
+.container-1{
+display: flex;
+justify-content: center;
+}
+
+.box-1{
+background-color: #fff;
+width: 20%;
+height: 55px;
+border-radius: 10px;
+margin-left: 50px;
+padding: 3px;
+}
+.box-2{
+background-color: #fff;
+width: 400px;
+height: 55px;
+border-radius: 10px;
+margin-left: 30px;
+padding: 3px;
+
+}
+.box-1 input{
+width: 70%;
+height: 48px;
+border-radius: 10px;
+border:none ;
+margin-top: 4px;
+
+}
+.location-map{
+color: orangered;
+margin-left: 10px;
+}
+.chevron-no{
+color: black;
+}
+.box-2 input{
+width: 92%;
+height: 48px;
+border-radius: 10px;
+border:none ;
+margin-top: 4px;
+margin-left: 3px;
+}
+.delivery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Flexbox container for the images */
+.items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* Spacing between images */
+    width: 90%; /* Makes the container width responsive */
+    
+}
+
+/* Style each image to maintain their size */
+.items img {
+    width: 245px;
+    object-fit: contain; /* Ensures images scale properly */
+    transition: transform 0.3s ease; /* Adds smooth effect when hovered */
+}
+
+/* Add hover effect to zoom images */
+.items img:hover {
+    transform: scale(1.1);
+}
+
+
+.bottom{
+    background-color:#fff;
+    display: grid;
+}
+.food{
+    position: relative;
+    top: 60px;
+    left: 180px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: #fff;
+    width: 900px;
+    display: grid;
+
+}
+
+.scroll-container {
+    overflow-x: auto;
+}
+.scroll-container::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+.content {
+    white-space: nowrap;    
+    flex-wrap: nowrap;
+    gap: 10px; /* Adds space between images */
+}
+
+.fruit{
+    position: relative;
+    top: 100px;
+    left: 170px;
+    width: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.fruit-1{
+  display: flex;
+  background-color: #fff;
+  overflow-x: scroll;   
+  width: 900px; 
+}
+.fruit-1::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.fruit-2 img{
+   padding: 20px;
+   
+}
+.fruit-2 h4{
+    top: 9px;
+    text-align: center;
+}
+
+.dineout-1{
+        display: grid;    
+    grid-template-columns: auto auto auto auto auto ;
+    display: flex;
+    gap: 2%;
+    width: 200%;
+
+}
+.dineout-1{ 
+    display: flex;      
+    overflow-x:scroll ;
+    flex-direction: row;
+    padding-bottom:300px ;
+    top: 300px;
+    margin-left: 200px;
+    width: 900px;
+}
+
+.dineout-1::-webkit-scrollbar{
+       width: 0;
+       height: 0;
+  }
+
+
+
+.out h1{
+    position: relative;
+    top: 160px;
+    left: 170px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bolder;
+    
+}          
+.dineout-2{
+    position: relative;
+    top: 180px;
+    left: 10px;
+    background-color: #fff;
+    display: grid;
+}
+.dineout{
+    width: 350px;
+    border: 1px solid #cfcdcd;
+    border-radius: 10px;
+    
+
+}
+.dineout img{
+    width: 350px;
+    border-radius: 9px 9px 0 0;
+}
+.review{
+    position: absolute;
+    z-index: 1;
+    top: 155px;
+    display: flex;
+    flex-direction: row;
+    
+}
+.review h3,.review h4{
+    color: #fff;
+    
+}
+
+.review h4{
+    margin-left: 120%;
+}
+.review{
+    margin-left: 3%;
+ }
+ .card-body{
+    padding: 10px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.p{
+    color: #2b2a2a;
+}
+.booking{
+    background-color: #cfcdcd;
+    width: 30%;
+    text-align: center;
+    padding: 3px 6px;
+    border-radius: 20px;
+}
+.pre-booking{
+    background-color: rgb(50, 183, 50);
+    padding: 0 10px;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+.pre-booking p{
+    color: #fff;
+}
+.upto{
+    background-color: rgb(174, 237, 172);
+    padding: 10px 5px;
+    border-radius: 10px;
+    font-weight: bolder;
+    color: rgb(111, 207, 111);
+}
+
+
+.app{
+    position: relative;
+    top: 20px;
+}
+.cities h3{
+    position: relative;
+    top: 70px;
+    left: 180px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cities-1{
+    display: grid;
+    justify-content: center;
+    grid-column-gap:20px;
+    grid-row-gap: 30px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    margin-top: 70px;
+    margin-left:70px;
+    
+
+}
+.cities-2{
+    border: 1px solid rgb(214, 201, 201);
+    width: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 10px;
+    align-items: center;
+}
+.cities-2:hover{
+    background-color: rgb(216, 26, 8);
+   }
+
+.cities-2 h3{
+    text-align: center;
+}
+.cities-2 h5{
+    text-align: center;
+    font-size: 20px;
+    color: orangered;
+}
+
+.order-1 h5{
+    position: relative;
+    top: 40px;
+    left: 180px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.order-2{
+    display: grid;
+    justify-content: center;
+    grid-column-gap:20px;
+    grid-row-gap: 30px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    margin-top: 40px;
+    margin-left:70px;
+    
+
+}
+.order-3{
+    
+    border: 1px solid rgb(214, 201, 201);
+    width: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 10px;
+    align-items: center;
+}
+
+.order-3:hover{
+ background-color: rgb(212, 42, 12);
+}
+
+.order-3 h3{
+    text-align: center;
+
+}
+.order-3 h5{
+    text-align: center;
+    font-size: 20px;
+    color: orangered;
+}
+.footer{
+    background-color: #f3f4f6;
+    margin-top: 20px;
+
+}
+.row-1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px,auto));
+    gap: 3rem;
+}
+.first img{
+    width: 150px;
+    height: 48px;
+    margin-top: 30px;
+    margin-left: 100px; 
+}
+.first p{
+    margin-left: 100px;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.first-1{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+.first-2{
+
+    right: 20px;
+}
+.first-3 h4,.first-3 p{
+    right:200px;
+}
+.first-5{
+     left: 200px;
+}
+.first-1 h4{
+    color: #212529;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+.row-1 p{
+    color: #565656;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.links{
+    position: absolute;
+    margin-top: 30px;
+    left: 1065px;
+}
+.under p{
+    position: relative;
+    margin-left: 200px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    left: 70px;
+}
+.under-1{
+    position: relative;
+    margin-left: 650px;
+    
+}
+
+
+ 
+    
+
